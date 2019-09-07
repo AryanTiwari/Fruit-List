@@ -11,53 +11,54 @@ function App() {
 
   const allFruits = {
     // A
-    "apple": true, "apricot": true, "avocado": true,
+    "Açaí": true, "Akee": true, "Apple": true, "Apricot": true, "Avocado": true,
     // B
-    "banana": true, "bilberry": true, "blackberry": true, "blackcurrant": true, "blood orange": true, 
-    "blueberry": true, "boysenberry": true,
+    "Banana": true, "Bell pepper": true, "Bilberry": true, "Black sapote": true, "Blackberry": true, 
+    "Blackcurrant": true, "Blood orange": true, "Blueberry": true, "Boysenberry": true, "Buddha's hand": true, 
     // C
-    "cantaloupe": true, "cherimoya": true, "cherry": true, "chico fruit": true, "chili": true, 
-    "clementine": true, "cloudberry": true, "coconut": true, "corn": true, "cranberry": true, "cucumber": true, 
-    "currant": true, "custard apple": true, 
+    "Cantaloupe": true, "Cherry": true, "Chico fruit": true, "Chili pepper": true, "Clementine": true, "Cloudberry": true, "Coconut": true, 
+    "Corn": true, "Crab apples": true, "Cranberry": true, "Cucumber": true, "Currant": true, "Custard Apple": true, 
     // D
-    "damson": true, "date": true, "dragonfruit": true, "durian": true, 
+    "Damson": true, "Date": true, "Dragonfruit": true, "Durian": true, 
     // E
-    "eggplant": true, "elderberry": true, 
+    "Eggplant": true, "Elderberry": true, 
     // F
-    "feijoa": true, "fig": true, 
-    // G
-    "goji berry": true, "gooseberry": true, "grape": true, "grapefruit": true, "guava": true, 
+    "Feijoa": true, "Fig": true, "Goji berry": true, "Gooseberry": true, "Grape": true, "Grapefruit": true, "Guava": true, 
     // H
-    "honeyberry": true, "honeydew": true, "huckleberry": true, 
+    "Honeyberry": true, "Honeydew": true, "Huckleberry": true, 
     // J
-    "jabuticaba": true, "jackfruit": true, "jambul": true, "jujube": true, "juniperberry": true, 
+    "Jabuticaba": true, "Jackfruit": true, "Jambul": true, "Japanese plum": true, "Jostaberry": true, "Jujube": true, "Juniper berry": true, 
     // K
-    "kiwi": true, "kumquat": true, 
+    "Kiwano": true, "Kiwi": true, "Kumquat": true, 
     // L
-    "lemon": true, "lime": true, "longan": true, "loquat": true, "lychee": true, 
+    "Lemon": true, "Lime": true, "Longan": true, "Loquat": true, "Lychee": true, 
     // M
-    "mandarine": true, "mango": true, "marionberry": true, "melon": true, "miracle fruit": true, "mulberry": true, 
+    "Mandarine": true, "Mango": true, "Mangosteen": true, "Marionberry": true, "Melon": true, "Miracle fruit": true, "Mulberry": true, 
     // N
-    "nance": true, "nectarine": true, 
+    "Nance": true, "Nectarine": true, 
     // O
-    "olive": true, "orange": true, 
+    "Olive": true, "Orange": true, 
     // P
-    "papaya": true, "passionfruit": true, "pea": true, "peach": true, "pear": true, "persimmon": true, "physalis": true, 
-    "pineapple": true, "plantain": true, "plum": true, "plumcot": true, "pomegranate": true, "pomelo": true, "prune": true, 
-    "purple mangosteen": true, 
+    "Papaya": true, "Passionfruit": true, "Pea": true, "Peach": true, "Pear": true, "Persimmon": true, "Pineapple": true, 
+    "Pineberry": true, "Plantain": true, "Plum": true, "Plumcot": true, "Pomegranate": true, "Pomelo": true, "Prune": true, 
+    "Pumpkin": true, "Purple mangosteen": true, 
     // Q
-    "quince": true, 
+    "Quince": true, 
     // R
-    "raisin": true, "rambutan": true, "raspberry": true, "redcurrant": true, 
+    "Raisin": true, "Rambutan": true, "Raspberry": true, "Redcurrant": true, 
     // S
-    "salak": true, "salal berry": true, "salmonberry": true, "satsuma": true, "solanum quitoense": true, 
-    "soursop": true, "squash": true, "star fruit": true, "strawberry": true, "sunflower seed": true, 
-    // T
-    "tamarillo": true, "tamarind": true, "tangerine": true, "tomato": true, 
+    "Salak": true, "Salal berry": true, "Salmonberry": true, "Satsuma": true, "Soursop": true, "Squash": true, 
+    "Star apple": true, "Star fruit": true, "Strawberry": true, "Surinam cherry": true, 
+    //T
+    "Tamarillo": true, "Tamarind": true, "Tangerine": true, "Tomato": true, 
     // U
-    "ugli fruit": true, 
+    "Ugli fruit": true, 
     // W
-    "watermelon": true
+    "Watermelon": true, "White currant": true, "White sapote": true, 
+    // Y
+    "Yuzu": true, 
+    // Z
+    "Zucchini": true
   }
 
   // Title of webpage
@@ -66,7 +67,7 @@ function App() {
   // Function to add a fruit
   const addToFruits = (fruitToAdd) => {
     // Check if new fruit contains only letters
-    if (/[^a-z ]/i.test(fruitToAdd))
+    if (/[^a-z' ]/i.test(fruitToAdd))
       setErrorDisplay(<p style={{color: 'red'}}>New fruit must be only letters!</p>)
 
     // Check if new fruit is a duplicate
@@ -78,7 +79,7 @@ function App() {
       setErrorDisplay(<p style={{color: 'red'}}>That name is empty!</p>)
   
     // Check if string is a real fruit
-    else if (!allFruits[fruitToAdd.toLowerCase()]) {
+    else if (!allFruits[fruitToAdd.charAt(0).toUpperCase() + fruitToAdd.toLowerCase().substring(1)]) {
       setErrorDisplay(<p style={{color: 'red'}}>That's not a real fruit!</p>)
     }
 
