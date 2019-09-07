@@ -11,54 +11,54 @@ function App() {
 
   const allFruits = {
     // A
-    "Açaí": true, "Akee": true, "Apple": true, "Apricot": true, "Avocado": true,
+    'Açaí': true, 'Akee': true, 'Apple': true, 'Apricot': true, 'Avocado': true,
     // B
-    "Banana": true, "Bell pepper": true, "Bilberry": true, "Black sapote": true, "Blackberry": true, 
-    "Blackcurrant": true, "Blood orange": true, "Blueberry": true, "Boysenberry": true, "Buddha's hand": true, 
+    'Banana': true, 'Bell pepper': true, 'Bilberry': true, 'Black sapote': true, 'Blackberry': true, 
+    'Blackcurrant': true, 'Blood orange': true, 'Blueberry': true, 'Boysenberry': true, "Buddha's hand": true, 
     // C
-    "Cantaloupe": true, "Cherry": true, "Chico fruit": true, "Chili pepper": true, "Clementine": true, "Cloudberry": true, "Coconut": true, 
-    "Corn": true, "Crab apples": true, "Cranberry": true, "Cucumber": true, "Currant": true, "Custard Apple": true, 
+    'Cantaloupe': true, 'Cherry': true, 'Chico fruit': true, 'Chili pepper': true, 'Clementine': true, 'Cloudberry': true, 'Coconut': true, 
+    'Corn': true, 'Crab apples': true, 'Cranberry': true, 'Cucumber': true, 'Currant': true, 'Custard Apple': true, 
     // D
-    "Damson": true, "Date": true, "Dragonfruit": true, "Durian": true, 
+    'Damson': true, 'Date': true, 'Dragonfruit': true, 'Durian': true, 
     // E
-    "Eggplant": true, "Elderberry": true, 
+    'Eggplant': true, 'Elderberry': true, 
     // F
-    "Feijoa": true, "Fig": true, "Goji berry": true, "Gooseberry": true, "Grape": true, "Grapefruit": true, "Guava": true, 
+    'Feijoa': true, 'Fig': true, 'Goji berry': true, 'Gooseberry': true, 'Grape': true, 'Grapefruit': true, 'Guava': true, 
     // H
-    "Honeyberry": true, "Honeydew": true, "Huckleberry": true, 
+    'Honeyberry': true, 'Honeydew': true, 'Huckleberry': true, 
     // J
-    "Jabuticaba": true, "Jackfruit": true, "Jambul": true, "Japanese plum": true, "Jostaberry": true, "Jujube": true, "Juniper berry": true, 
+    'Jabuticaba': true, 'Jackfruit': true, 'Jambul': true, 'Japanese plum': true, 'Jostaberry': true, 'Jujube': true, 'Juniper berry': true, 
     // K
-    "Kiwano": true, "Kiwi": true, "Kumquat": true, 
+    'Kiwano': true, 'Kiwi': true, 'Kumquat': true, 
     // L
-    "Lemon": true, "Lime": true, "Longan": true, "Loquat": true, "Lychee": true, 
+    'Lemon': true, 'Lime': true, 'Longan': true, 'Loquat': true, 'Lychee': true, 
     // M
-    "Mandarine": true, "Mango": true, "Mangosteen": true, "Marionberry": true, "Melon": true, "Miracle fruit": true, "Mulberry": true, 
+    'Mandarine': true, 'Mango': true, 'Mangosteen': true, 'Marionberry': true, 'Melon': true, 'Miracle fruit': true, 'Mulberry': true, 
     // N
-    "Nance": true, "Nectarine": true, 
+    'Nance': true, 'Nectarine': true, 
     // O
-    "Olive": true, "Orange": true, 
+    'Olive': true, 'Orange': true, 
     // P
-    "Papaya": true, "Passionfruit": true, "Pea": true, "Peach": true, "Pear": true, "Persimmon": true, "Pineapple": true, 
-    "Pineberry": true, "Plantain": true, "Plum": true, "Plumcot": true, "Pomegranate": true, "Pomelo": true, "Prune": true, 
-    "Pumpkin": true, "Purple mangosteen": true, 
+    'Papaya': true, 'Passionfruit': true, 'Pea': true, 'Peach': true, 'Pear': true, 'Persimmon': true, 'Pineapple': true, 
+    'Pineberry': true, 'Plantain': true, 'Plum': true, 'Plumcot': true, 'Pomegranate': true, 'Pomelo': true, 'Prune': true, 
+    'Pumpkin': true, 'Purple mangosteen': true, 
     // Q
-    "Quince": true, 
+    'Quince': true, 
     // R
-    "Raisin": true, "Rambutan": true, "Raspberry": true, "Redcurrant": true, 
+    'Raisin': true, 'Rambutan': true, 'Raspberry': true, 'Redcurrant': true, 
     // S
-    "Salak": true, "Salal berry": true, "Salmonberry": true, "Satsuma": true, "Soursop": true, "Squash": true, 
-    "Star apple": true, "Star fruit": true, "Strawberry": true, "Surinam cherry": true, 
+    'Salak': true, 'Salal berry': true, 'Salmonberry': true, 'Satsuma': true, 'Soursop': true, 'Squash': true, 
+    'Star apple': true, 'Star fruit': true, 'Strawberry': true, 'Surinam cherry': true, 
     //T
-    "Tamarillo": true, "Tamarind": true, "Tangerine": true, "Tomato": true, 
+    'Tamarillo': true, 'Tamarind': true, 'Tangerine': true, 'Tomato': true, 
     // U
-    "Ugli fruit": true, 
+    'Ugli fruit': true, 
     // W
-    "Watermelon": true, "White currant": true, "White sapote": true, 
+    'Watermelon': true, 'White currant': true, 'White sapote': true, 
     // Y
-    "Yuzu": true, 
+    'Yuzu': true, 
     // Z
-    "Zucchini": true
+    'Zucchini': true
   }
 
   // Title of webpage
@@ -88,7 +88,7 @@ function App() {
       setNoFruits(<p></p>)
       setErrorDisplay(<div></div>)
       setFruit([...fruits, fruitToAdd.charAt(0).toUpperCase() + fruitToAdd.substring(1).toLowerCase()])
-      document.getElementById("fruitToAdd").value = ''
+      document.getElementById('fruitToAdd').value = ''
     }
   }
 
@@ -239,7 +239,7 @@ function App() {
 
   // Returning all the elements
   return (
-    <div className="mainDiv">
+    <div className='mainDiv'>
       {/* Title of the page */}
       <h1> The Fruit List </h1>
       {/* Say if there are no fruits */}
@@ -263,7 +263,7 @@ function App() {
         borderRadius: 4,
         paddingLeft: 7,
       }}
-        id="fruitToAdd"
+        id='fruitToAdd'
         placeholder= 'New Fruit'
       />
       {/* Button to remove the currently selected fruit */}
@@ -295,7 +295,7 @@ function App() {
           width: 80,
           height: 20,
         }} 
-        onClick={() => addToFruits(document.getElementById("fruitToAdd").value)}>
+        onClick={() => addToFruits(document.getElementById('fruitToAdd').value)}>
         Add Fruit
       </button>
       {/* Displaying any errors */}
