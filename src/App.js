@@ -9,50 +9,56 @@ function App() {
   const [update, setUpdate] = useState(0)
   const [noFruits, setNoFruits] = useState(<p></p>)
 
-  const allFruits = [
+  const allFruits = {
     // A
-    "apple", "apricot", "avocado",
+    "apple": true, "apricot": true, "avocado": true,
     // B
-    "banana", "bilberry", "blackberry", "blackcurrant", "blood Orange", "blueberry", "boysenberry",
+    "banana": true, "bilberry": true, "blackberry": true, "blackcurrant": true, "blood Orange": true, 
+    "blueberry": true, "boysenberry": true,
     // C
-    "cantaloupe", "cherimoya", "cherry", "chico fruit", "chili", "clementine", "cloudberry", "coconut", "corn", "cranberry", "cucumber", "Ccurrant", "Custard apple", 
+    "cantaloupe": true, "cherimoya": true, "cherry": true, "chico fruit": true, "chili": true, 
+    "clementine": true, "cloudberry": true, "coconut": true, "corn": true, "cranberry": true, "cucumber": true, 
+    "currant": true, "Custard apple": true, 
     // D
-    "damson", "date", "dragonfruit", "durian", 
+    "damson": true, "date": true, "dragonfruit": true, "durian": true, 
     // E
-    "eggplant", "elderberry", 
+    "eggplant": true, "elderberry": true, 
     // F
-    "feijoa", "fig", 
+    "feijoa": true, "fig": true, 
     // G
-    "goji berry", "gooseberry", "grape", "grapefruit", "guava", 
+    "goji berry": true, "gooseberry": true, "grape": true, "grapefruit": true, "guava": true, 
     // H
-    "honeyberry", "honeydew", "huckleberry", 
+    "honeyberry": true, "honeydew": true, "huckleberry": true, 
     // J
-    "jabuticaba", "jackfruit", "jambul", "jujube", "juniperberry", 
+    "jabuticaba": true, "jackfruit": true, "jambul": true, "jujube": true, "juniperberry": true, 
     // K
-    "kiwi", "kumquat", 
+    "kiwi": true, "kumquat": true, 
     // L
-    "lemon", "lime", "longan", "loquat", "lychee", 
+    "lemon": true, "lime": true, "longan": true, "loquat": true, "lychee": true, 
     // M
-    "mandarine", "mango", "marionberry", "melon", "miracle fruit", "mulberry", 
+    "mandarine": true, "mango": true, "marionberry": true, "melon": true, "miracle fruit": true, "mulberry": true, 
     // N
-    "nance", "nectarine", 
+    "nance": true, "nectarine": true, 
     // O
-    "olive", "orange", 
+    "olive": true, "orange": true, 
     // P
-    "papaya", "passionfruit", "pea", "peach", "pear", "persimmon", "physalis", "pineapple", "plantain", "plum", "plumcot", "pomegranate", "pomelo", "prune", "purple mangosteen", 
+    "papaya": true, "passionfruit": true, "pea": true, "peach": true, "pear": true, "persimmon": true, "physalis": true, 
+    "pineapple": true, "plantain": true, "plum": true, "plumcot": true, "pomegranate": true, "pomelo": true, "prune": true, 
+    "purple mangosteen": true, 
     // Q
-    "quince", 
+    "quince": true, 
     // R
-    "raisin", "rambutan", "raspberry", "redcurrant", 
+    "raisin": true, "rambutan": true, "raspberry": true, "redcurrant": true, 
     // S
-    "salak", "salal berry", "salmonberry", "satsuma", "solanum quitoense", "soursop", "squash", "star fruit", "strawberry", "sunflower seed", 
+    "salak": true, "salal berry": true, "salmonberry": true, "satsuma": true, "solanum quitoense": true, 
+    "soursop": true, "squash": true, "star fruit": true, "strawberry": true, "sunflower seed": true, 
     // T
-    "tamarillo", "tamarind", "tangerine", "tomato", 
+    "tamarillo": true, "tamarind": true, "tangerine": true, "tomato": true, 
     // U
-    "ugli fruit", 
+    "ugli fruit": true, 
     // W
-    "watermelon"
-  ]
+    "watermelon": true
+  }
 
   // Title of webpage
   document.title = 'Fruit List' 
@@ -72,7 +78,7 @@ function App() {
       setErrorDisplay(<p style={{color: 'red'}}>That name is empty!</p>)
   
     // Check if string is a real fruit
-    else if (!allFruits.includes(fruitToAdd.toLowerCase())) {
+    else if (!allFruits[fruitToAdd]) {
       setErrorDisplay(<p style={{color: 'red'}}>That's not a real fruit!</p>)
     }
 
@@ -81,7 +87,6 @@ function App() {
       setNoFruits(<p></p>)
       setErrorDisplay(<div></div>)
       setFruit([...fruits, fruitToAdd.charAt(0).toUpperCase() + fruitToAdd.substring(1).toLowerCase()])
-      // setFruit(fruits.sort())
       document.getElementById("fruitToAdd").value = ''
     }
   }
