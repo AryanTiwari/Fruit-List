@@ -13,12 +13,12 @@ function App() {
     // A
     "apple": true, "apricot": true, "avocado": true,
     // B
-    "banana": true, "bilberry": true, "blackberry": true, "blackcurrant": true, "blood Orange": true, 
+    "banana": true, "bilberry": true, "blackberry": true, "blackcurrant": true, "blood orange": true, 
     "blueberry": true, "boysenberry": true,
     // C
     "cantaloupe": true, "cherimoya": true, "cherry": true, "chico fruit": true, "chili": true, 
     "clementine": true, "cloudberry": true, "coconut": true, "corn": true, "cranberry": true, "cucumber": true, 
-    "currant": true, "Custard apple": true, 
+    "currant": true, "custard apple": true, 
     // D
     "damson": true, "date": true, "dragonfruit": true, "durian": true, 
     // E
@@ -78,7 +78,7 @@ function App() {
       setErrorDisplay(<p style={{color: 'red'}}>That name is empty!</p>)
   
     // Check if string is a real fruit
-    else if (!allFruits[fruitToAdd]) {
+    else if (!allFruits[fruitToAdd.toLowerCase()]) {
       setErrorDisplay(<p style={{color: 'red'}}>That's not a real fruit!</p>)
     }
 
