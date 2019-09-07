@@ -16,8 +16,8 @@ function App() {
     'Banana': true, 'Bell pepper': true, 'Bilberry': true, 'Black sapote': true, 'Blackberry': true,
     'Blackcurrant': true, 'Blood orange': true, 'Blueberry': true, 'Boysenberry': true, "Buddha's hand": true,
     // C
-    'Cantaloupe': true, 'Cherry': true, 'Chico fruit': true, 'Chili pepper': true, 'Clementine': true, 'Cloudberry': true, 'Coconut': true,
-    'Corn': true, 'Crab apples': true, 'Cranberry': true, 'Cucumber': true, 'Currant': true, 'Custard Apple': true,
+    'Chikoo': true, 'Cantaloupe': true, 'Cherry': true, 'Chili pepper': true, 'Clementine': true, 'Cloudberry': true, 'Coconut': true,
+    'Corn': true, 'Crab apples': true, 'Cranberry': true, 'Cucumber': true, 'Currant': true, 'Custard apple': true,
     // D
     'Damson': true, 'Date': true, 'Dragonfruit': true, 'Durian': true,
     // E
@@ -39,7 +39,7 @@ function App() {
     // O
     'Olive': true, 'Orange': true,
     // P
-    'Papaya': true, 'Passionfruit': true, 'Pea': true, 'Peach': true, 'Pear': true, 'Persimmon': true, 'Pineapple': true,
+    'Papaya': true, 'Passion fruit': true, 'Pea': true, 'Peach': true, 'Pear': true, 'Persimmon': true, 'Pineapple': true,
     'Pineberry': true, 'Plantain': true, 'Plum': true, 'Plumcot': true, 'Pomegranate': true, 'Pomelo': true, 'Prune': true,
     'Pumpkin': true, 'Purple mangosteen': true,
     // Q
@@ -48,7 +48,7 @@ function App() {
     'Raisin': true, 'Rambutan': true, 'Raspberry': true, 'Redcurrant': true,
     // S
     'Salak': true, 'Salal berry': true, 'Salmonberry': true, 'Satsuma': true, 'Soursop': true, 'Squash': true,
-    'Star apple': true, 'Star fruit': true, 'Strawberry': true, 'Surinam cherry': true,
+    'Star apple': true, 'Star fruit': true, 'Strawberry': true, 'Surinam cherry': true, 'Sunflower seed': true,
     //T
     'Tamarillo': true, 'Tamarind': true, 'Tangerine': true, 'Tomato': true,
     // U
